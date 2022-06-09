@@ -2,10 +2,13 @@
 pragma solidity ^0.8.10;
 
 import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
-//créer le token et avoir ses fonctions avec
+//ERC721 permet de créer le token et avoir ses fonctions avec
 import "@openzeppelin/contracts/access/Ownable.sol";
+//Ownable permet de limiter certaines actions au propriétaire du contrat
 import "@openzeppelin/contracts/utils/Counters.sol";
+//Counters permet de créer les ID des tokens
 import "@openzeppelin/contracts/utils/Strings.sol";
+//Strings va permettre de transformer un numéro (integer) en chaine de caractères (string)
 
 contract NekrIsERC721 is ERC721, Ownable {
     using Counters for Counters.Counter;

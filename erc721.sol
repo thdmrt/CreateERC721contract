@@ -10,11 +10,13 @@ import "@openzeppelin/contracts/utils/Counters.sol";
 import "@openzeppelin/contracts/utils/Strings.sol";
 //Strings va permettre de transformer un numéro (integer) en chaine de caractères (string)
 
-contract NekrIsERC721 is ERC721, Ownable {
+contract thdmrt is ERC721, Ownable {
+//On déclare le contrat sous le nom "thdmrt" et on lui attribue les fonctions ERC721 et Ownable
     using Counters for Counters.Counter;
     using Strings for uint;
-
+//On déclare que Counters va gérer les token ID et Strings pour les uint
     Counters.Counter private _tokenIds;
+//On va générer des ID privées avec Counter
 
     uint public constant MAX_SUPPLY = 100;
     uint public constant PRICE = 0.00001 ether;

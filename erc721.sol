@@ -20,8 +20,9 @@ contract thdmrt is ERC721, Ownable {
 
     uint public constant MAX_SUPPLY = 100;
     uint public constant PRICE = 0.00001 ether;
-
+//Supply et price du mint de la collection 
     string public baseTokenURI;
+    
 
     constructor(string memory baseURI) ERC721("Nekr Collection", "NEKR") {
         setBaseURI(baseURI);
